@@ -296,20 +296,20 @@ footer {
 #backToTop {
     display: none; /* Hidden by default */
     position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
     font-size: 18px;
     border: none;
     outline: none;
     background-color: var(--accent-color);
     color: white;
     cursor: pointer;
-    padding: 12px 16px;
+    padding: 15px;
     border-radius: 50px;
     font-size: 18px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
+    transition: opacity 0.3s;
 }
 #backToTop:hover {
     background-color: #555;
