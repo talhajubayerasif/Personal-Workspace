@@ -29,3 +29,26 @@ themeToggle.addEventListener("click", () => {
         localStorage.setItem("theme", "light");
     }
 });
+
+// Back to Top Button
+const backToTopButton = document.getElementById("backToTop");
+
+window.onscroll = function() {
+    this.scrollFunction();
+};
+
+function scrollFunction() {
+    if (window.innerWidth <=768) {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+backToTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
